@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <DataSources />
+  <DataSets />
+  <Reports>
+    <ProjectItem>
+      <Name>_100 - NW_Packet.rdl</Name>
+      <FullPath>_100 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>_200 - NW_Packet.rdl</Name>
+      <FullPath>_200 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>_300 - NW_Packet.rdl</Name>
+      <FullPath>_300 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>_400 - NW_Packet.rdl</Name>
+      <FullPath>_400 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>_500 - NW_Packet.rdl</Name>
+      <FullPath>_500 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>_600_700 - NW_Packet.rdl</Name>
+      <FullPath>_600_700 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>_700 - NW_Packet.rdl</Name>
+      <FullPath>_700 - NW_Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>1 -Packet Summary Report.rdl</Name>
+      <FullPath>1 -Packet Summary Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>100 - Summary - Panels and Solid Parts.rdl</Name>
+      <FullPath>100 - Summary - Panels and Solid Parts.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>110 - Summary - Jambs.rdl</Name>
+      <FullPath>110 - Summary - Jambs.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>120 - Jamb Traveler Packet.rdl</Name>
+      <FullPath>120 - Jamb Traveler Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>120 - Jamb Traveler.rdl</Name>
+      <FullPath>120 - Jamb Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>130 - Summary - Sticking.rdl</Name>
+      <FullPath>130 - Summary - Sticking.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>140 - Chop Summary - Non Standard Core.rdl</Name>
+      <FullPath>140 - Chop Summary - Non Standard Core.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>150 - Rip Dispatch and Traveler- Exterior Veneers Packet.rdl</Name>
+      <FullPath>150 - Rip Dispatch and Traveler- Exterior Veneers Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>150 - Rip Dispatch and Traveler- Exterior Veneers.rdl</Name>
+      <FullPath>150 - Rip Dispatch and Traveler- Exterior Veneers.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>151 - Rip Dispatch and Traveler- Exterior Veneers Packet.rdl</Name>
+      <FullPath>151 - Rip Dispatch and Traveler- Exterior Veneers Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>151 - Rip Dispatch and Traveler- Exterior Veneers.rdl</Name>
+      <FullPath>151 - Rip Dispatch and Traveler- Exterior Veneers.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>152 - Chop Summary - Non Standard Core.rdl</Name>
+      <FullPath>152 - Chop Summary - Non Standard Core.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>200 - Chop Summary - Panels and Solid Parts.rdl</Name>
+      <FullPath>200 - Chop Summary - Panels and Solid Parts.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>210 - Chop Summary - Standard Core.rdl</Name>
+      <FullPath>210 - Chop Summary - Standard Core.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>220 - Standard Core Traveler Packet.rdl</Name>
+      <FullPath>220 - Standard Core Traveler Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>220 - Standard Core Traveler.rdl</Name>
+      <FullPath>220 - Standard Core Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>230 - Chop Summary - Sticking.rdl</Name>
+      <FullPath>230 - Chop Summary - Sticking.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>300 - Veneer Summary - Stiles and Rails - Order.rdl</Name>
+      <FullPath>300 - Veneer Summary - Stiles and Rails - Order.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>300 - Veneer Summary - Stiles and Rails.rdl</Name>
+      <FullPath>300 - Veneer Summary - Stiles and Rails.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>310 - Stile and Rail Traveler.rdl</Name>
+      <FullPath>310 - Stile and Rail Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>320 - Veneer Summary and Traveler - Veneered Panels Packet.rdl</Name>
+      <FullPath>320 - Veneer Summary and Traveler - Veneered Panels Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>320 - Veneer Summary and Traveler - Veneered Panels.rdl</Name>
+      <FullPath>320 - Veneer Summary and Traveler - Veneered Panels.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>330 - Veneer Summary and Traveler Arched Jambs.rdl</Name>
+      <FullPath>330 - Veneer Summary and Traveler Arched Jambs.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>400 - Molding Summary - Jambs.rdl</Name>
+      <FullPath>400 - Molding Summary - Jambs.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>420 - Molding n Stop Summary.rdl</Name>
+      <FullPath>420 - Molding n Stop Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>430 - Molding and Stop Traveler Drilldn Job.rdl</Name>
+      <FullPath>430 - Molding and Stop Traveler Drilldn Job.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>430 - Molding and Stop Traveler Drilldn Packet.rdl</Name>
+      <FullPath>430 - Molding and Stop Traveler Drilldn Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>430 - Molding and Stop Traveler Drilldn.rdl</Name>
+      <FullPath>430 - Molding and Stop Traveler Drilldn.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>500 - Raised Panel and Solid Parts Traveler.rdl</Name>
+      <FullPath>500 - Raised Panel and Solid Parts Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>509 - Plywood Panel and Core Packet Summary.rdl</Name>
+      <FullPath>509 - Plywood Panel and Core Packet Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>510 - Plywood and Bladder Panels Dispatch List and Traveler - Order.rdl</Name>
+      <FullPath>510 - Plywood and Bladder Panels Dispatch List and Traveler - Order.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>510 - Plywood and Bladder Panels Dispatch List and Traveler Packet.rdl</Name>
+      <FullPath>510 - Plywood and Bladder Panels Dispatch List and Traveler Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>510 - Plywood and Bladder Panels Dispatch List and Traveler.rdl</Name>
+      <FullPath>510 - Plywood and Bladder Panels Dispatch List and Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>511 - Fire Core Dispatch List and Traveler Packet.rdl</Name>
+      <FullPath>511 - Fire Core Dispatch List and Traveler Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>511 - Fire Core Dispatch List and Traveler.rdl</Name>
+      <FullPath>511 - Fire Core Dispatch List and Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>514 - Raised Panel Packet Summary.rdl</Name>
+      <FullPath>514 - Raised Panel Packet Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>515 - Raised Panel Dispatch List and Traveler Packet.rdl</Name>
+      <FullPath>515 - Raised Panel Dispatch List and Traveler Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>515 - Raised Panel Dispatch List and Traveler.rdl</Name>
+      <FullPath>515 - Raised Panel Dispatch List and Traveler.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>529 - Arched Part Packet Summary - Unique.rdl</Name>
+      <FullPath>529 - Arched Part Packet Summary - Unique.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>530 - Arched Part Dispatch List - Unique Packet.rdl</Name>
+      <FullPath>530 - Arched Part Dispatch List - Unique Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>530 - Arched Part Dispatch List - Unique.rdl</Name>
+      <FullPath>530 - Arched Part Dispatch List - Unique.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>539 - Arched Part Packet Summary - Homag.rdl</Name>
+      <FullPath>539 - Arched Part Packet Summary - Homag.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>540 - Arched Part Dispatch List - Homag Packet.rdl</Name>
+      <FullPath>540 - Arched Part Dispatch List - Homag Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>540 - Arched Part Dispatch List - Homag.rdl</Name>
+      <FullPath>540 - Arched Part Dispatch List - Homag.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>600 - Stile and Rail Dispatch List.rdl</Name>
+      <FullPath>600 - Stile and Rail Dispatch List.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>605 - Stile and Rail Traveler Packet.rdl</Name>
+      <FullPath>605 - Stile and Rail Traveler Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>609 - Stile and Rail Packet Summary - Koch.rdl</Name>
+      <FullPath>609 - Stile and Rail Packet Summary - Koch.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>610 - Stile and Rail Picklist - Koch Arched Parts.rdl</Name>
+      <FullPath>610 - Stile and Rail Picklist - Koch Arched Parts.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>610 - Stile and Rail Picklist - Koch Non Arched Parts.rdl</Name>
+      <FullPath>610 - Stile and Rail Picklist - Koch Non Arched Parts.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>610 - Stile and Rail Picklist - Koch Packet.rdl</Name>
+      <FullPath>610 - Stile and Rail Picklist - Koch Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>615 - Stile and Rail Packet Summary - Reman.rdl</Name>
+      <FullPath>615 - Stile and Rail Packet Summary - Reman.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>620 - Stile and Rail Traveler - Reman - Non-Koch Packet.rdl</Name>
+      <FullPath>620 - Stile and Rail Traveler - Reman - Non-Koch Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>620 - Stile and Rail Traveler - Reman - Non-Koch.rdl</Name>
+      <FullPath>620 - Stile and Rail Traveler - Reman - Non-Koch.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>625 - Stile and Rail Traveler - Reman - Shape Packet.rdl</Name>
+      <FullPath>625 - Stile and Rail Traveler - Reman - Shape Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>625 - Stile and Rail Traveler - Reman - Shape.rdl</Name>
+      <FullPath>625 - Stile and Rail Traveler - Reman - Shape.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>630 - Stile and Rail Packet Summary - French.rdl</Name>
+      <FullPath>630 - Stile and Rail Packet Summary - French.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>635 - Stile and Rail Traveler - French - Non-Koch Packet.rdl</Name>
+      <FullPath>635 - Stile and Rail Traveler - French - Non-Koch Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>635 - Stile and Rail Traveler - French - Non-Koch.rdl</Name>
+      <FullPath>635 - Stile and Rail Traveler - French - Non-Koch.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>700 - French Build Picklist Packet.rdl</Name>
+      <FullPath>700 - French Build Picklist Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>700 - French Build Picklist.rdl</Name>
+      <FullPath>700 - French Build Picklist.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>705 - Reman Build Summary.rdl</Name>
+      <FullPath>705 - Reman Build Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>710 - Reman Build Picklist Packet.rdl</Name>
+      <FullPath>710 - Reman Build Picklist Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>710 - Reman Build Picklist.rdl</Name>
+      <FullPath>710 - Reman Build Picklist.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>715 - Slab Fire Build Summary.rdl</Name>
+      <FullPath>715 - Slab Fire Build Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>720 - Slab Fire Build Picklist Packet.rdl</Name>
+      <FullPath>720 - Slab Fire Build Picklist Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>720 - Slab Fire Build Picklist.rdl</Name>
+      <FullPath>720 - Slab Fire Build Picklist.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>730 - Systematic Build Summary.rdl</Name>
+      <FullPath>730 - Systematic Build Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>800 - Build Picklist.rdl</Name>
+      <FullPath>800 - Build Picklist.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>801 - Build Picklist.rdl</Name>
+      <FullPath>801 - Build Picklist.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>810 - Remake.rdl</Name>
+      <FullPath>810 - Remake.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>820 - Boring Location Detail.rdl</Name>
+      <FullPath>820 - Boring Location Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>900 - Door Dispatch List.rdl</Name>
+      <FullPath>900 - Door Dispatch List.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Core Requirements - Area.rdl</Name>
+      <FullPath>910 - Core Requirements - Area.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Flat Panel Requirements - Area.rdl</Name>
+      <FullPath>910 - Flat Panel Requirements - Area.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Jamb Requirements - Volume.rdl</Name>
+      <FullPath>910 - Jamb Requirements - Volume.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Lineal Lumber Requirements - Volume.rdl</Name>
+      <FullPath>910 - Lineal Lumber Requirements - Volume.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Material Requirements Estimate.rdl</Name>
+      <FullPath>910 - Material Requirements Estimate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Part Lumber Requirements - Volume.rdl</Name>
+      <FullPath>910 - Part Lumber Requirements - Volume.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>910 - Veneer Requirements - Area.rdl</Name>
+      <FullPath>910 - Veneer Requirements - Area.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>1000 - Traveler Job.rdl</Name>
+      <FullPath>1000 - Traveler Job.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Jamb Detail Summary Packet.rdl</Name>
+      <FullPath>Jamb Detail Summary Packet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Jamb Detail Summary.rdl</Name>
+      <FullPath>Jamb Detail Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Manufacturing Overview Print.rdl</Name>
+      <FullPath>Manufacturing Overview Print.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Manufacturing Overview.rdl</Name>
+      <FullPath>Manufacturing Overview.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Manufacturing Progress.rdl</Name>
+      <FullPath>Manufacturing Progress.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Move Units Between Packs.rdl</Name>
+      <FullPath>Move Units Between Packs.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Slab Scan History.rdl</Name>
+      <FullPath>Slab Scan History.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Truck Report.rdl</Name>
+      <FullPath>Truck Report.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>Northwood Reports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>Northwood Reports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>Northwood Reports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>
