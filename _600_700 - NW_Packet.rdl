@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="epicor_sp">
+      <DataSourceReference>epicor_sp</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>c57b626b-fae3-415f-a873-3c9ee35ee138</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>epicor_sp</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@PacketID">
+            <Value>=Parameters!PacketID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>select top 1 PacketID  from dbo.vrpt_Iowa_Base_Operations where packetid = @PacketID</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="PacketID">
+          <DataField>PacketID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Subreport Name="Subreport6">
+            <ReportName>600 - Stile and Rail Dispatch List</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Left>0.0375in</Left>
+            <Height>0.19792in</Height>
+            <Width>10.51854in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport8">
+            <ReportName>605 - Stile and Rail Traveler Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>0.31125in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.21875in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport9">
+            <ReportName>610 - Stile and Rail Picklist - Koch Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>0.9675in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.17361in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport10">
+            <ReportName>620 - Stile and Rail Traveler - Reman - Non-Koch Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>1.63277in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.15972in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport11">
+            <ReportName>700 - French Build Picklist Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>3.10291in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.16667in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle5">
+            <ReportItems>
+              <Rectangle Name="Rectangle6">
+                <ReportItems>
+                  <Rectangle Name="Rectangle7">
+                    <PageBreak>
+                      <BreakLocation>End</BreakLocation>
+                    </PageBreak>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>0.0382in</Height>
+                    <Width>2.98958in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <KeepTogether>true</KeepTogether>
+                <Height>0.0382in</Height>
+                <Width>2.98958in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.54389in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle8">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.21181in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle9">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.19667in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle10">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.85847in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport12">
+            <ReportName>615 - Stile and Rail Packet Summary - Reman</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>1.30431in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.14584in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle11">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.51126in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport13">
+            <ReportName>609 - Stile and Rail Packet Summary - Koch</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>0.63765in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.21875in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle12">
+            <ReportItems>
+              <Rectangle Name="Rectangle13">
+                <ReportItems>
+                  <Rectangle Name="Rectangle14">
+                    <PageBreak>
+                      <BreakLocation>End</BreakLocation>
+                    </PageBreak>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>0.0382in</Height>
+                    <Width>2.98958in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <KeepTogether>true</KeepTogether>
+                <Height>0.0382in</Height>
+                <Width>2.98958in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.87029in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport14">
+            <ReportName>710 - Reman Build Picklist Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>3.73277in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.20139in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle15">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>4.00708in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.01042in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport15">
+            <ReportName>625 - Stile and Rail Traveler - Reman - Shape Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>1.96611in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.14931in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>15</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle17">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>3.33138in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.01042in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>16</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport16">
+            <ReportName>705 - Reman Build Summary</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>3.40764in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.15972in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>17</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle18">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>3.62084in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>18</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle19">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>4.36404in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.04862in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>19</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport17">
+            <ReportName>715 - Slab Fire Build Summary</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>4.09111in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.20139in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>20</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport18">
+            <ReportName>720 - Slab Fire Build Picklist Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>4.48834in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.20139in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>21</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport19">
+            <ReportName>635 - Stile and Rail Traveler - French - Non-Koch Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>2.65868in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.14931in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>22</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle16">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.87813in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.01042in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>23</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle20">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.20312in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.01042in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport20">
+            <ReportName>630 - Stile and Rail Packet Summary - French</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>2.28298in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.14931in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle21">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.51562in</Top>
+            <Left>0.0375in</Left>
+            <Height>0.01042in</Height>
+            <Width>10.51854in</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>8.04167in</Height>
+        <Style />
+      </Body>
+      <Width>10.55604in</Width>
+      <Page>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
+        <LeftMargin>0.2in</LeftMargin>
+        <RightMargin>0.2in</RightMargin>
+        <TopMargin>0.2in</TopMargin>
+        <BottomMargin>0.2in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="PacketID">
+      <DataType>String</DataType>
+      <Prompt>Packet ID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0f74d112-879b-4fce-bb1f-99d208efc66e</rd:ReportID>
+</Report>

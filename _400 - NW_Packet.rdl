@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="epicor_sp">
+      <DataSourceReference>epicor_sp</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>c57b626b-fae3-415f-a873-3c9ee35ee138</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>epicor_sp</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@PacketID">
+            <Value>=Parameters!PacketID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>select top 1 PacketID  from dbo.vrpt_Iowa_Base_Operations where packetid = @PacketID</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="PacketID">
+          <DataField>PacketID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Subreport Name="Subreport1">
+            <ReportName>400 - Molding Summary - Jambs</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=Parameters!PacketID.Value</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data Could Be Found for Report:  400 - Molding Summary - Jambs</NoRowsMessage>
+            <Height>0.23958in</Height>
+            <Width>10.31124in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport2">
+            <ReportName>420 - Molding n Stop Summary</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=Parameters!PacketID.Value</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data Could Be Found for Report: 420 - Molding and Stop Summary</NoRowsMessage>
+            <Top>0.49479in</Top>
+            <Height>0.28125in</Height>
+            <Width>10.31124in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle1">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.30902in</Top>
+            <Left>1.50917in</Left>
+            <Height>0.11632in</Height>
+            <Width>4.83333in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle2">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.81771in</Top>
+            <Left>1.50917in</Left>
+            <Height>0.11632in</Height>
+            <Width>4.83333in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Subreport Name="Subreport4">
+            <ReportName>430 - Molding and Stop Traveler Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=Parameters!PacketID.Value</Value>
+              </Parameter>
+            </Parameters>
+            <Top>0.98959in</Top>
+            <Height>0.19792in</Height>
+            <Width>10.31124in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+        </ReportItems>
+        <Height>8in</Height>
+        <Style />
+      </Body>
+      <Width>10.31124in</Width>
+      <Page>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
+        <LeftMargin>0.2in</LeftMargin>
+        <TopMargin>0.2in</TopMargin>
+        <BottomMargin>0.2in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="PacketID">
+      <DataType>String</DataType>
+      <Prompt>Packet ID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0f74d112-879b-4fce-bb1f-99d208efc66e</rd:ReportID>
+</Report>

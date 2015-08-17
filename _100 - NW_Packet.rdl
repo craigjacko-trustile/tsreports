@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="epicor_sp">
+      <DataSourceReference>epicor_sp</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>c57b626b-fae3-415f-a873-3c9ee35ee138</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>epicor_sp</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@PacketID">
+            <Value>=Parameters!PacketID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>select Distinct PacketID from dbo.vrpt_Iowa_Base_Operations where packetid = @PacketID </CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="PacketID">
+          <DataField>PacketID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Subreport Name="Subreport3">
+            <ReportName>1 -Packet Summary Report</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <Height>0.33333in</Height>
+            <Width>10.29167in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport5">
+            <ReportName>100 - Summary - Panels and Solid Parts</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data found for 100 - Summary - Panels and Solid Parts</NoRowsMessage>
+            <Top>0.50916in</Top>
+            <Height>0.32292in</Height>
+            <Width>10.29167in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport9">
+            <ReportName>110 - Summary - Jambs</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data Found for 110 - Summary - Jambs</NoRowsMessage>
+            <Top>0.97791in</Top>
+            <Height>0.28125in</Height>
+            <Width>10.29167in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport10">
+            <ReportName>120 - Jamb Traveler Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data Found for 120 - Jamb Traveler Packet</NoRowsMessage>
+            <Top>1.49875in</Top>
+            <Height>0.25in</Height>
+            <Width>10.29167in</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport11">
+            <ReportName>130 - Summary - Sticking</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data found for 130 -  Summary - Sticking</NoRowsMessage>
+            <Top>1.9675in</Top>
+            <Height>0.33333in</Height>
+            <Width>10.29167in</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport12">
+            <ReportName>140 - Chop Summary - Non Standard Core</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data found for 140 - Rip Dispatch and Traveler Core - Non Standard Width Packet</NoRowsMessage>
+            <Top>2.4675in</Top>
+            <Height>0.30208in</Height>
+            <Width>10.29167in</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Subreport Name="Subreport13">
+            <ReportName>150 - Rip Dispatch and Traveler- Exterior Veneers Packet</ReportName>
+            <Parameters>
+              <Parameter Name="PacketID">
+                <Value>=First(Fields!PacketID.Value, "DataSet1")</Value>
+              </Parameter>
+            </Parameters>
+            <NoRowsMessage>No Data Found for 150 - Rip Dispatch and Traveler- Exterior Veneers Packet</NoRowsMessage>
+            <Top>2.93625in</Top>
+            <Height>0.27083in</Height>
+            <Width>10.29167in</Width>
+            <ZIndex>6</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
+          <Rectangle Name="Rectangle7">
+            <ReportItems>
+              <Rectangle Name="Rectangle8">
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <KeepTogether>true</KeepTogether>
+                <Height>0.0382in</Height>
+                <Width>2.98958in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
+              <Rectangle Name="Rectangle11">
+                <ReportItems>
+                  <Rectangle Name="Rectangle12">
+                    <PageBreak>
+                      <BreakLocation>End</BreakLocation>
+                    </PageBreak>
+                    <KeepTogether>true</KeepTogether>
+                    <Height>0.0382in</Height>
+                    <Width>2.98958in</Width>
+                    <Style>
+                      <Border>
+                        <Style>None</Style>
+                      </Border>
+                    </Style>
+                  </Rectangle>
+                </ReportItems>
+                <PageBreak>
+                  <BreakLocation>End</BreakLocation>
+                </PageBreak>
+                <KeepTogether>true</KeepTogether>
+                <Height>0.0382in</Height>
+                <Width>2.98958in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Rectangle>
+            </ReportItems>
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.82514in</Top>
+            <Height>0.0382in</Height>
+            <Width>10.28125in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle10">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.36458in</Top>
+            <Height>0.0382in</Height>
+            <Width>10.28125in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle9">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.85986in</Top>
+            <Height>0.0382in</Height>
+            <Width>10.28125in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle13">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.8043in</Top>
+            <Left>0.01042in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.28125in</Width>
+            <ZIndex>10</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle14">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.32861in</Top>
+            <Left>0.01042in</Left>
+            <Height>0.0382in</Height>
+            <Width>10.28125in</Width>
+            <ZIndex>11</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Rectangle Name="Rectangle15">
+            <PageBreak>
+              <BreakLocation>End</BreakLocation>
+            </PageBreak>
+            <KeepTogether>true</KeepTogether>
+            <Top>2.35639in</Top>
+            <Height>0.0382in</Height>
+            <Width>10.28125in</Width>
+            <ZIndex>12</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>7.76958in</Height>
+        <Style />
+      </Body>
+      <Width>10.35291in</Width>
+      <Page>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
+        <LeftMargin>0.2in</LeftMargin>
+        <RightMargin>0.2in</RightMargin>
+        <TopMargin>0.2in</TopMargin>
+        <BottomMargin>0.2in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="PacketID">
+      <DataType>String</DataType>
+      <Prompt>Packet ID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0f74d112-879b-4fce-bb1f-99d208efc66e</rd:ReportID>
+</Report>
