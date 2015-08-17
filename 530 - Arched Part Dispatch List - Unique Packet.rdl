@@ -16,7 +16,7 @@
                 <TablixCell>
                   <CellContents>
                     <Subreport Name="Subreport1">
-                      <ReportName>531 - Arched Part Dispatch List - Unique</ReportName>
+                      <ReportName>530 - Arched Part Dispatch List - Unique</ReportName>
                       <Parameters>
                         <Parameter Name="PacketID">
                           <Value>=Fields!PacketID.Value</Value>
