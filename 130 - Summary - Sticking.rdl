@@ -136,7 +136,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Shop Report 1300 </Value>
+                              <Value>Shop Report 130</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -470,6 +470,7 @@
                       </Style>
                     </Textbox>
                     <ColSpan>2</ColSpan>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell />
