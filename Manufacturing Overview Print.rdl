@@ -2496,6 +2496,13 @@ Iif(SUM(Fields!DaysLate.Value)&gt;0,"Orange","Transparent")))</BackgroundColor>
             <FilterValue>=Parameters!LineType.Value</FilterValue>
           </FilterValues>
         </Filter>
+        <Filter>
+          <FilterExpression>=Fields!OrderPriority.Value</FilterExpression>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>=Parameters!Priority.Value</FilterValue>
+          </FilterValues>
+        </Filter>
       </Filters>
     </DataSet>
     <DataSet Name="param_PacketStart_default">
@@ -2827,6 +2834,29 @@ where Packet &lt;&gt; 0</CommandText>
       <cl:ComponentMetadata xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition">
         <cl:HideUpdateNotifications>true</cl:HideUpdateNotifications>
       </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="Priority">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Normal</Value>
+          <Value>High</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Priority</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>Normal</Value>
+            <Label>Normal</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>High</Value>
+            <Label>High</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
